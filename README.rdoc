@@ -20,6 +20,8 @@ in your environment.rb
 	require 'rack/options/request'
 	
 then do a
+	
+  config.gem "CodeOfficer-rack-options-request" # (optional)
 
 	config.middleware.use Rack::Options::Request
 
