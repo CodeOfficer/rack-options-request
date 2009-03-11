@@ -1,4 +1,9 @@
 = rack-options-request
+----------------------------------------------------------------
+* Web:        http://www.codeofficer.com/
+* Email:      spam*@*codeofficer*dot*com
+* Github:     http://github.com/CodeOfficer/rack-options-request/
+
 
 Have you seen exceptions like this before?
 
@@ -7,6 +12,8 @@ Have you seen exceptions like this before?
 This is usually the result of a Microsoft product sending an OPTIONS request to your app with a user_agent of "Microsoft Office Protocol Discovery". This middleware will stop those requests in their tracks, and keep them from hitting your rails stack.
 
 TO USE with Rails 2.3:
+
+	gem install CodeOfficer-rack-options-request
 
 in your environment.rb
 
