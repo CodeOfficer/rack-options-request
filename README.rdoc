@@ -6,7 +6,7 @@ Have you seen exceptions like this before?
 
 This is usually the result of a Microsoft product sending an OPTIONS request to your app with a user_agent of "Microsoft Office Protocol Discovery". This middleware will stop those requests in their tracks, and keep them from hitting your rails stack.
 
-TO USE:
+TO USE with Rails 2.3:
 
 in your environment.rb
 
