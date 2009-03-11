@@ -1,6 +1,23 @@
 = rack-options-request
 
-Description goes here.
+Have you seen exceptions like this before?
+
+"ActionController::NotImplemented: Only requests are allowed."
+
+This is usually the result of a Microsoft product sending an OPTIONS request to your app with a user_agent of "Microsoft Office Protocol Discovery". This middleware will stop those requests in their tracks, and keep them from hitting your rails stack.
+
+TO USE:
+
+in your environment.rb
+
+	require 'rack/options/request'
+	
+then do a
+
+	config.middleware.use Rack::Options::Request
+
+For more information, please read:
+http://rails.learnhub.com/lesson/2318-dealing-with-microsoft-office-protocol-discovery-in-rails
 
 Until I learn TDD, you can test your local app with ...
 
