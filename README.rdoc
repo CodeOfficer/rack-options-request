@@ -1,0 +1,7 @@
+= rack-options-request
+
+Description goes here.
+
+== Copyright
+
+Copyright (c) 2009 Russell Jones. See LICENSE for details.
