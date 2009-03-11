@@ -2,6 +2,18 @@
 
 Description goes here.
 
+Until I learn TDD, you can test your local app with ...
+
+	curl -X GET http://localhost:3000/
+
+	Should return your normal content.
+
+While ...
+
+	curl -X OPTIONS http://localhost:3000/
+
+	Should return a 200 status and "Microsoft Office Protocol Discovery".
+
 == Copyright
 
 Copyright (c) 2009 Russell Jones. See LICENSE for details.
