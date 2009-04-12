@@ -9,7 +9,7 @@ module Rack
       
       def call(env)
         if env["REQUEST_METHOD"] =~ /OPTIONS/
-          [200, {"Content-Type" => "text/html"}, ["Microsoft Office Protocol Discovery"]]
+          [405, {"Content-Type" => "text/html"}, ["Microsoft Office Protocol Discovery"]]
         else
           @app.call(env)
         end
