@@ -15,15 +15,10 @@ TO USE with Rails 2.3:
 
 	gem install CodeOfficer-rack-options-request
 
-in your environment.rb
+then in your environment.rb:
 
-	require 'rack/options/request'
-	
-then do a
-	
-  config.gem "CodeOfficer-rack-options-request" # (optional)
-
-	config.middleware.use Rack::Options::Request
+  config.gem "CodeOfficer-rack-options-request", :lib => 'rack/options/request'
+	config.middleware.use 'Rack::Options::Request'
 
 For more information, please read:
 http://rails.learnhub.com/lesson/2318-dealing-with-microsoft-office-protocol-discovery-in-rails
