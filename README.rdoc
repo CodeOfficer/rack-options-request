@@ -13,27 +13,27 @@ This is usually the result of a Microsoft product sending an OPTIONS request to 
 
 TO USE with Rails 2.3:
 
-	gem install CodeOfficer-rack-options-request
+  gem install CodeOfficer-rack-options-request
 
 then in your environment.rb:
 
   config.gem "CodeOfficer-rack-options-request", :lib => 'rack/options/request'
-	config.middleware.use 'Rack::Options::Request'
+  config.middleware.use 'Rack::Options::Request'
 
 For more information, please read:
 http://rails.learnhub.com/lesson/2318-dealing-with-microsoft-office-protocol-discovery-in-rails
 
 Until I learn TDD, you can test your local app with ...
 
-	curl -X GET http://localhost:3000/
+  curl -X GET http://localhost:3000/
 
-	Should return your normal content.
+Should return your normal content.
 
 While ...
 
-	curl -X OPTIONS http://localhost:3000/
+  curl -X OPTIONS http://localhost:3000/
 
-	Should return a 200 status and "Microsoft Office Protocol Discovery".
+Should return a 200 status and "Microsoft Office Protocol Discovery".
 
 == Copyright
 
